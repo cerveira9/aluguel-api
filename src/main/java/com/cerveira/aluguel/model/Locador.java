@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 import org.springframework.stereotype.Service;
 
@@ -34,9 +32,5 @@ public class Locador implements Serializable{
 	private String cpf;
 	private String rg;
 	private String orgaoEmissor;
-	
-	@ManyToOne
-	@JoinColumn(name = "id_aluguel")
-	private Aluguel aluguel;
 
 }
